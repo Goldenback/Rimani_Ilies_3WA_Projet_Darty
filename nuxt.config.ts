@@ -12,6 +12,9 @@ export default defineNuxtConfig({
     ],
     app: {
         head: {
+            htmlAttrs: {
+                lang: 'fr'
+            },
             link: [
                 {rel: 'stylesheet', href: 'https://cdn.digityser.com/fa6_2/css/all.min.css'},
             ],

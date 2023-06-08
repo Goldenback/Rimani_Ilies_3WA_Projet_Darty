@@ -87,7 +87,7 @@ function postCustomerQuiz(token: string) {
                     </div>
                     <div class="py-3 h-50 d-flex flex-column" :style="{'background-color': profile.color}">
                         <p class="m-0 my-auto" v-if="profile.id == 4" style="color: #005EAD">WONDER MAMAN<br>{{ profile.name }} ?</p>
-                        <p class="m-0 my-auto" v-else>WONDER MAMAN<br>{{ profile.name }} ?</p>
+                        <p class="m-0 my-auto" :aria-label="profile.name" v-else>WONDER MAMAN<br>{{ profile.name }} ?</p>
                     </div>
                 </template>
             </div>
